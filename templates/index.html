@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <center>
+            <br>
+            <br>
+            <h1>House price prediction</h1>
+
+<form action="{{ url_for('predict')}}" method="post">
+    <h3>select location</h3>
+    
+    <br>
+    <br>
+    cgpa <input type="text" id="cgpa" name="cgpa">
+    <br>
+    <br>
+    Internships	Projects <input type="text" id="ip" name="ip">
+    <br>
+    <br>
+    Projects <input type="text" id="pr" name="pr">
+    <br>
+    <br>
+    Workshops/Certifications <input type="text" id="wc" name="wc">
+    <br>
+    <br>
+    AptitudeTestScore <input type="text" id="ass" name="ass">
+    <br>
+    <br>
+    SoftSkillsRating <input type="text" id="sst" name="sst">
+    <br>
+    <br>
+    SSC_Marks <input type="text" id="sscm" name="sscm">
+    <br>
+    <br>
+    HSC_Marks <input type="text" id="hscm" name="hscm">
+    <br>
+    <br>
+    ExtracurricularActivities <input type="text" id="exa" name="exa">
+    <br>
+    <br>
+    PlacementTraining_ <input type="text" id="pt" name="pt">
+    <br>
+    <br>
+   
+    <input type="submit" name="sub">
+</form>
+{{ prediction_text }}
+</center>
+    </body>
+</html>
+
+<!--CGPA	Internships	Projects	Workshops/Certifications	AptitudeTestScore	
+SoftSkillsRating	SSC_Marks	HSC_Marks	ExtracurricularActivities	PlacementTraining_	PlacementStatus-->
